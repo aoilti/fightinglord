@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400; }
+img {
+    border: 0;
+    vertical-align: top; }
+li {
+    list-style: none; }
+
+input, textarea {
+    border: none;
+    background: none;
+    appearance: none; }
+
+input, textarea, select {
+  border: 0;
+  outline: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit; }
+
+button, input[type="submit"] {
+  border: none;
+  background: none;
+  appearance: none;
+  outline: none; }
+
+a {
+  touch-callout: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent; }
+
+i, em {
+  font-style: normal; }
+
+textarea {
+  resize: none; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner,
+textarea::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+    color: #3a3a3a;
+    font-size: 12px; }
+
+
+.contain{
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/background.jpg) center;
+    position: relative;
+}
+.contain .begin{
+    width:60%;
+    height: 90vh;
+    margin: 0 auto;
+    display: none;
+}
+.contain .begin .lord{
+    width:100%;
+    height: 60%;
+    margin-top:0rem; 
+}
+.contain .begin .lord .lordImg{
+    width:100%;height: 95%;
+    margin-top: 30px;
+}
+.contain .begin .beginBtn{
+    width:100%;
+    height: 30%;
+}
+.beginBtn .btn{
+    padding: 0 18px;
+    height: 30px;
+    line-height: 30px;
+    margin:0 auto;
+    margin-top: 30px;
+    display: block;
+    border-radius: 11%;
+    background: #f9e061; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f9e061 0%, #febf04 100%); 
+    background: -webkit-linear-gradient(top,  #f9e061 0%,#febf04 100%); 
+    background: linear-gradient(to bottom,  #f9e061 0%,#febf04 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9e061', endColorstr='#febf04',GradientType=0 ); 
+    color: #59312f;
+    /*font-weight: bold;*/
+}
+.card_wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.showCardBase{
+    width:40%;
+    height: 80px;
+    border-radius: 0 0 20px 20px;
+    border:4px solid #185b92;
+    border-top:0;
+    background: #073d6b; /* Old browsers */
+    background: -webkit-linear-gradient(left, #073d6b 0%, #043d6d 50%, #0b3c6e 100%);
+    background: -o-linear-gradient(left, #073d6b 0%, #043d6d 50%, #0b3c6e 100%);
+    background: linear-gradient(to right, #073d6b 0%, #043d6d 50%, #0b3c6e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#073d6b', endColorstr='#0b3c6e',GradientType=1 ); /* IE6-9 */
+    margin: 0 auto;
+    padding:8px 0;
+}           
+.showCardBase .showBase{
+    border:2px solid #10456f;
+    background: #0c294a;
+    padding:6px;
+    width:60%;
+    height: 98%;
+    margin: 0 auto;
+}
+.showCardBase .showBase .showCard{
+    width:30%;
+    float: left;
+    background: url(../img/bgCard.png) no-repeat -30px -40px;
+    height: 100%;
+    border-radius:10%;
+}
+.centerCard{
+    margin:0 5%;
+}
+.personA{
+    margin-left: 20px;
+    float: left;
+}
+.borderInline{
+    border:4px solid #92473a;
+    border-radius: 10px;
+    width:100%;
+    height: 100%;
+    position: relative;
+    box-shadow: 2px 3px 3px #0e0e0e; 
+}
+.personHerder{
+    width: 122%;
+    height: 122%;    
+    position: absolute;
+    top:-8px;
+    left: -8px;
+}
+.personB{
+    float: right;  
+    margin-right:20px;
+}
+.namePosition{
+    position: absolute;
+    top:-10px;
+    height:20px;
+    width: 100%;
+    line-height: 20px;
+    color:#f4e34a;
+    font-size: 14px;
+    font-weight: 1200;
+}
+.myself,.personB,.personA{
+    width:80px;
+    height: 80px;
+    position: relative;
+    padding:16px;
+}
+.myself{
+    float: left;
+    top:-36px;
+    margin-left: 20px;
+    z-index: 122;
+}
+.footer{
+    width:100vw;
+    height: 40px;
+    position: absolute;
+    bottom:0;
+    border-top: 1px solid #005d81;
+    background: #0b73c8; 
+    background: -moz-linear-gradient(top,  #0b73c8 0%, #0b73c8 50%, #1b4e96 100%); 
+    background: -webkit-linear-gradient(top,  #0b73c8 0%,#0b73c8 50%,#1b4e96 100%);
+    background: linear-gradient(to bottom,  #0b73c8 0%,#0b73c8 50%,#1b4e96 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b73c8', endColorstr='#1b4e96',GradientType=0 );
+}
+.nameMe{
+    bottom:18px;
+    right : -72px;
+    top:44px;
+}
+.base,.times,.integral{
+    float: left;
+    line-height: 40px;
+    margin-left:50px;
+    color: #FFF;
+    font-size: 16px; 
+}
+.base_num,.times_num,.integral_num{
+    color:#f1cc25;
+}
+.show_myCard{
+    position: relative;
+    /*width: 80%;*/
+    margin: 0 auto;
+    bottom: 80px;
+    height: 80px;
+    z-index: 1;
+}
+.show_myCard li{
+    float: left;
+    height:100%;
+    position: absolute;
+    overflow: hidden;
+}
+.show_myCard li img{
+    width: 100%;
+    height: 100%;
+}
+.clock,.say{
+    width: 30px;
+    height: 30px;
+    margin-top:10px;
+    float: left;
+    position: relative;
+    transform:translateX(32%);
+}
+div.say{  
+    width: 40px;    
+    height: 30px;    
+    line-height: 30px;
+    padding: 0;
+    text-align: center;
+    /*background: red;   */
+    position: relative;   
+    -moz-border-radius: 10px;    
+    -webkit-border-radius: 10px;    
+    border-radius: 10px;   
+    transform: translateX(0%);
+}
+.say:before{
+    content:"";
+    position: absolute;   
+    bottom: 100%;   
+    left: 6px;   
+    width: 0;   
+    height: 0;   
+    border-left: 4px solid transparent;   
+    border-bottom: 8px solid #d29f67;   
+    border-right: 4px solid transparent; 
+}
+.myself .say{
+    top:-100px;
+}
+.myself .say:before{
+    content:"";
+    position: absolute;   
+    top: 100%;   
+    left: 6px;   
+    width: 0;   
+    height: 0;   
+    border-left: 4px solid transparent;   
+    border-top: 8px solid #d29f67;   
+    border-bottom: 0;   
+    border-right: 4px solid transparent;
+}
+/* div.say{
+    height: 20px;
+    width: 36px;
+    padding: 0;
+    text-align: center;
+    line-height: 16px;
+    font-size: 14px;
+    color:#FFF;
+    font-weight: blod;
+    font-family: "楷体";
+    border:2px solid #d29f67;
+    border-radius: 10%;
+} */
+.clock .timer{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #92473a;
+    line-height: 32px;
+    font-weight: 900;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.clock img{
+    width:100%;
+    height: 100%;
+}
+.stage_showCard{
+    width:50vw;
+    margin:0 auto;
+    height: 35vh;
+}
+.out_card{
+    height: 30px;
+    position: absolute;
+    bottom: 135px;
+    left:50%;
+    margin-left: -90px;
+}
+.out_card .clock{
+    transform:translateX(0);
+    margin-top: 0;
+}
+.out_card button,.say{
+    float: left;
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 10px;
+    border:2px solid #d29f67;
+    background: #5fb330;
+    transition:all 1s ease;
+    margin-right: 10px;
+    background: -moz-linear-gradient(top,  #5fb330 0%, #0c691e 50%, #024a22 100%); 
+    background: -webkit-linear-gradient(top,  #5fb330 0%,#0c691e 50%,#024a22 100%);
+    background: linear-gradient(to bottom,  #5fb330 0%,#0c691e 50%,#024a22 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c691e', endColorstr='#024a22',GradientType=0 );
+    color:#fff;
+}
